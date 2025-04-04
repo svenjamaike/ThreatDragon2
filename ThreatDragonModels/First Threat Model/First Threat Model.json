@@ -38,6 +38,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -121,7 +122,6 @@
               ]
             },
             "id": "c0372877-c2f0-4665-b1a6-fb7bab3c244f",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Web Browser",
@@ -154,6 +154,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -237,7 +238,6 @@
               ]
             },
             "id": "1620e68c-c155-45b3-a7eb-c5c55cdfb6db",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "Incident\nFrontend",
@@ -273,6 +273,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -356,7 +357,6 @@
               ]
             },
             "id": "6f9a0ca7-745b-496a-ad48-646b377c3d82",
-            "zIndex": 3,
             "data": {
               "type": "tm.Process",
               "name": "Configuration\nFrontend",
@@ -392,6 +392,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -475,7 +476,6 @@
               ]
             },
             "id": "61a2e4e4-6cd3-4b13-8bc8-8090dcb828d4",
-            "zIndex": 4,
             "data": {
               "type": "tm.Process",
               "name": "Keycloak",
@@ -511,6 +511,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -594,7 +595,6 @@
               ]
             },
             "id": "eeeaa0d3-2374-4976-9301-f7a165c1d9dc",
-            "zIndex": 5,
             "data": {
               "type": "tm.Process",
               "name": "Ingress",
@@ -630,6 +630,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 6,
             "ports": {
               "groups": {
                 "top": {
@@ -713,7 +714,6 @@
               ]
             },
             "id": "2d3bcce9-2e96-4094-baef-dedd730f07be",
-            "zIndex": 6,
             "data": {
               "type": "tm.Process",
               "name": "Product\nGateway",
@@ -749,6 +749,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 7,
             "ports": {
               "groups": {
                 "top": {
@@ -832,7 +833,6 @@
               ]
             },
             "id": "71e353a2-d0c5-44e7-a8fe-237eff75faf5",
-            "zIndex": 7,
             "data": {
               "type": "tm.Process",
               "name": "Configuration\nBackend",
@@ -868,6 +868,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 8,
             "ports": {
               "groups": {
                 "top": {
@@ -951,7 +952,6 @@
               ]
             },
             "id": "80f95f94-04fb-4f69-a426-c96c1c436b35",
-            "zIndex": 8,
             "data": {
               "type": "tm.Process",
               "name": "View State\nProvider",
@@ -987,6 +987,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 9,
             "ports": {
               "groups": {
                 "top": {
@@ -1070,7 +1071,6 @@
               ]
             },
             "id": "e305a8b2-e6ae-4f73-87b9-b57a9d39d814",
-            "zIndex": 9,
             "data": {
               "type": "tm.Process",
               "name": "Incident\nBackend",
@@ -1109,6 +1109,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 10,
             "ports": {
               "groups": {
                 "top": {
@@ -1192,7 +1193,6 @@
               ]
             },
             "id": "32c1e4ab-2112-4e33-8126-8c9d364d5474",
-            "zIndex": 10,
             "data": {
               "type": "tm.Store",
               "name": "View State Provider\nDatabase",
@@ -2094,7 +2094,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Configuration Updates",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -2106,17 +2106,81 @@
               "threats": []
             },
             "labels": [
-              "Data Flow"
+              "Configuration Updates"
             ],
-            "id": "9c9f9c46-4713-495e-9674-31eccfbde50f",
+            "id": "96cf6f94-534c-4bf5-8eb5-197c5f74f7fe",
             "source": {
-              "x": 848,
-              "y": 170
+              "x": 980,
+              "y": 220
             },
             "target": {
-              "x": 948,
-              "y": 270
-            }
+              "cell": "7ecbb67a-30cf-41b4-9842-c618eac556e5",
+              "port": "1a5c0e3e-9445-4274-baae-482bf0929021"
+            },
+            "vertices": [
+              {
+                "x": 900,
+                "y": 200
+              },
+              {
+                "x": 810,
+                "y": -70
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Incident Updates",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Incident Updates"
+            ],
+            "id": "91e9bc37-1449-4667-aea8-cade10287e25",
+            "source": {
+              "x": 910,
+              "y": 360
+            },
+            "target": {
+              "cell": "7ecbb67a-30cf-41b4-9842-c618eac556e5",
+              "port": "1a5c0e3e-9445-4274-baae-482bf0929021"
+            },
+            "vertices": [
+              {
+                "x": 830,
+                "y": 110
+              },
+              {
+                "x": 780,
+                "y": 80
+              }
+            ]
           },
           {
             "position": {
@@ -2142,6 +2206,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -2238,8 +2303,7 @@
               "storesCredentials": false,
               "storesInventory": false,
               "threats": []
-            },
-            "zIndex": 11
+            }
           },
           {
             "position": {
@@ -2265,6 +2329,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -2348,7 +2413,6 @@
               ]
             },
             "id": "8a2b4e98-b4d4-4ccc-a8af-cf201b722bf7",
-            "zIndex": 12,
             "data": {
               "type": "tm.Store",
               "name": "Incident\nDatabase",
@@ -2385,6 +2449,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 13,
             "ports": {
               "groups": {
                 "top": {
@@ -2468,7 +2533,6 @@
               ]
             },
             "id": "7ecbb67a-30cf-41b4-9842-c618eac556e5",
-            "zIndex": 13,
             "data": {
               "type": "tm.Process",
               "name": "RabbitMq",
@@ -2504,6 +2568,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 14,
             "ports": {
               "groups": {
                 "top": {
@@ -2587,7 +2652,6 @@
               ]
             },
             "id": "e915bb99-37e4-4e99-9059-63dc9a0e0b4b",
-            "zIndex": 14,
             "data": {
               "type": "tm.Actor",
               "name": "Plan Data Hub",
@@ -2620,6 +2684,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 15,
             "ports": {
               "groups": {
                 "top": {
@@ -2712,8 +2777,7 @@
               "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": []
-            },
-            "zIndex": 15
+            }
           },
           {
             "position": {
@@ -2736,6 +2800,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 16,
             "ports": {
               "groups": {
                 "top": {
@@ -2828,8 +2893,7 @@
               "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": []
-            },
-            "zIndex": 16
+            }
           },
           {
             "shape": "flow",
