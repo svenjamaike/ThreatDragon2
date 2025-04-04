@@ -3105,8 +3105,8 @@
             },
             "visible": true,
             "shape": "td-text-block",
-            "id": "9af9029a-995a-4d21-a50c-c782a23a8869",
             "zIndex": 18,
+            "id": "9af9029a-995a-4d21-a50c-c782a23a8869",
             "data": {
               "type": "tm.Text",
               "name": "User",
@@ -3129,8 +3129,8 @@
             },
             "visible": true,
             "shape": "td-text-block",
-            "id": "38c35176-ac60-42f4-8101-9c3cbbcd9c4d",
             "zIndex": 19,
+            "id": "38c35176-ac60-42f4-8101-9c3cbbcd9c4d",
             "data": {
               "type": "tm.Text",
               "name": "IVU Systeme",
@@ -3153,8 +3153,8 @@
             },
             "visible": true,
             "shape": "td-text-block",
-            "id": "dd716492-8ce1-40a1-919c-1fa8c3aa6bce",
             "zIndex": 20,
+            "id": "dd716492-8ce1-40a1-919c-1fa8c3aa6bce",
             "data": {
               "type": "tm.Text",
               "name": "Authentifizierte\nNutzung",
