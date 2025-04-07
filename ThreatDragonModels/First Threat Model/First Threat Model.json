@@ -3637,7 +3637,7 @@
                   "name": "block"
                 },
                 "sourceMarker": {
-                  "name": ""
+                  "name": "block"
                 },
                 "strokeDasharray": null
               }
@@ -3648,19 +3648,19 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "DANCE Nachrichten",
+              "name": "Incidents erstellen/DANCE",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
-              "isBidirectional": false,
+              "isBidirectional": true,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
               "threats": []
             },
             "labels": [
-              "DANCE Nachrichten"
+              "Incidents erstellen/DANCE"
             ],
             "id": "e2f08ace-a21a-4961-ab4b-262dd9b26ac2",
             "source": {
@@ -3670,7 +3670,17 @@
             "target": {
               "cell": "658dc9ec-6ad4-4322-b2a1-297b5323b822",
               "port": "96584928-a9df-4657-ab58-0838349f43ce"
-            }
+            },
+            "vertices": [
+              {
+                "x": 860,
+                "y": 400
+              },
+              {
+                "x": 970,
+                "y": 580
+              }
+            ]
           }
         ]
       },
