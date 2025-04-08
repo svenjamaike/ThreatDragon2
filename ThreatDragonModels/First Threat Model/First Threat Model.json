@@ -1491,31 +1491,6 @@
             "target": {
               "cell": "e305a8b2-e6ae-4f73-87b9-b57a9d39d814",
               "port": "8aed7f6a-9158-415e-8315-1343a8b1ef0f"
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
             }
           },
           {
@@ -2209,46 +2184,6 @@
             ]
           },
           {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
-            },
-            "labels": [
-              ""
-            ],
-            "id": "9b66657a-142f-4d3d-bfc9-393f7ad48844",
-            "source": {
-              "x": 670,
-              "y": 640
-            },
-            "target": {
-              "x": 1550,
-              "y": 610
-            },
-            "vertices": [
-              {
-                "x": 830,
-                "y": 440
-              },
-              {
-                "x": 1020,
-                "y": 340
-              },
-              {
-                "x": 1400,
-                "y": 420
-              }
-            ]
-          },
-          {
             "shape": "flow",
             "attrs": {
               "line": {
@@ -2289,6 +2224,90 @@
             },
             "target": {
               "cell": "80f95f94-04fb-4f69-a426-c96c1c436b35",
+              "port": "790c8f94-fcb3-4f72-a3b7-eb0adb08fea8"
+            }
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              ""
+            ],
+            "id": "9b66657a-142f-4d3d-bfc9-393f7ad48844",
+            "source": {
+              "x": 750,
+              "y": 660
+            },
+            "target": {
+              "x": 1550,
+              "y": 610
+            },
+            "vertices": [
+              {
+                "x": 830,
+                "y": 440
+              },
+              {
+                "x": 1020,
+                "y": 340
+              },
+              {
+                "x": 1400,
+                "y": 420
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Incident erstellen\nDANCE",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Incident erstellen\nDANCE"
+            ],
+            "id": "d791b836-6403-40c4-9b89-a730d31e1515",
+            "source": {
+              "cell": "658dc9ec-6ad4-4322-b2a1-297b5323b822",
+              "port": "96584928-a9df-4657-ab58-0838349f43ce"
+            },
+            "target": {
+              "cell": "7ecbb67a-30cf-41b4-9842-c618eac556e5",
               "port": "790c8f94-fcb3-4f72-a3b7-eb0adb08fea8"
             }
           },
@@ -2540,7 +2559,7 @@
           },
           {
             "position": {
-              "x": 880,
+              "x": 890,
               "y": 460
             },
             "size": {
@@ -2775,8 +2794,8 @@
           },
           {
             "position": {
-              "x": 963.25,
-              "y": 560
+              "x": 989.5,
+              "y": 580
             },
             "size": {
               "width": 112.5,
@@ -3031,8 +3050,8 @@
           },
           {
             "position": {
-              "x": 827.5,
-              "y": 580
+              "x": 800,
+              "y": 610
             },
             "size": {
               "width": 112.5,
@@ -3521,12 +3540,18 @@
             "id": "234477e5-596f-4394-bc64-132d50d5bb08",
             "source": {
               "cell": "7ecbb67a-30cf-41b4-9842-c618eac556e5",
-              "port": "790c8f94-fcb3-4f72-a3b7-eb0adb08fea8"
+              "port": "8aed7f6a-9158-415e-8315-1343a8b1ef0f"
             },
             "target": {
               "cell": "2d3bcce9-2e96-4094-baef-dedd730f07be",
-              "port": "7479760b-b00f-43fc-a7cd-535f0071f3ce"
-            }
+              "port": "1a5c0e3e-9445-4274-baae-482bf0929021"
+            },
+            "vertices": [
+              {
+                "x": 850,
+                "y": 360
+              }
+            ]
           }
         ]
       },
