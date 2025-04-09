@@ -4677,56 +4677,6 @@
                   "name": "block"
                 },
                 "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Login Credentials",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Login Credentials"
-            ],
-            "id": "bd464f66-711c-4a4c-a3ea-573f4093a924",
-            "source": {
-              "cell": "c0372877-c2f0-4665-b1a6-fb7bab3c244f",
-              "port": "eacf5e5b-0f30-4353-8c63-5987a79f00a9"
-            },
-            "target": {
-              "cell": "456cc5de-fee3-4ae5-8a9e-8526f1bea23a",
-              "port": "aea4057b-23ec-4751-a2ac-86ad80cef2a5"
-            },
-            "vertices": [
-              {
-                "x": 220,
-                "y": 320
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
                   "name": "block"
                 },
                 "strokeDasharray": null
@@ -5099,6 +5049,88 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Login Credentials",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "30e45b6c-a23c-4d6b-b2ff-661c17f0bdfd",
+                  "title": "Brute Force Passwort",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "Der Angreifer kennt einen gültigen Benutzernamen. Er probiert automatisiert alle möglichen Passwörter aus, bis er Zugriff zur Anwendung hat.",
+                  "mitigation": "",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 1,
+                  "score": ""
+                },
+                {
+                  "id": "dcd2255f-2de9-4def-858e-6cf4093470ba",
+                  "title": "Password Spraying",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "Ein Angreifer wählt ein häufiges Passwort und versucht probiert alle möglichen Benutzernamen mit diesem Passwort aus, bis er Zugriff zur Anwendung erlangt.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 2,
+                  "score": ""
+                }
+              ]
+            },
+            "labels": [
+              "Login Credentials"
+            ],
+            "id": "bd464f66-711c-4a4c-a3ea-573f4093a924",
+            "source": {
+              "cell": "c0372877-c2f0-4665-b1a6-fb7bab3c244f",
+              "port": "eacf5e5b-0f30-4353-8c63-5987a79f00a9"
+            },
+            "target": {
+              "cell": "456cc5de-fee3-4ae5-8a9e-8526f1bea23a",
+              "port": "aea4057b-23ec-4751-a2ac-86ad80cef2a5"
+            },
+            "vertices": [
+              {
+                "x": 220,
+                "y": 320
+              },
+              {
+                "x": 260,
+                "y": 351
+              }
+            ]
+          },
+          {
             "position": {
               "x": 1020,
               "y": 140
@@ -5112,11 +5144,13 @@
                 "text": "Incident\nDatabase"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -5212,13 +5246,27 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "a6142726-9c97-4499-8203-a740185c704a",
+                  "title": "Brute Force Credentials",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "Ein Angreifer, der im Netz ist, kann den Zugang zur Datenbank brute-forcen, bis er Zugriff erhält.",
+                  "mitigation": "",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 3,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -6003,6 +6051,6 @@
     ],
     "diagramTop": 2,
     "reviewer": "",
-    "threatTop": 0
+    "threatTop": 3
   }
 }
