@@ -3553,7 +3553,8 @@
               }
             ]
           }
-        ]
+        ],
+        "description": "A full overview of Incident and its surroundings, modeled after the TFB25L Testsystem"
       },
       {
         "id": 1,
@@ -6046,10 +6047,31 @@
               "threats": []
             }
           }
-        ]
+        ],
+        "description": "A simplified version of the High Level Systems Diagram, with redundant systems removed for readability"
+      },
+      {
+        "id": 2,
+        "title": "Passenger Message Manager",
+        "diagramType": "Generic",
+        "placeholder": "New generic diagram description",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "version": "2.4.1",
+        "cells": [],
+        "description": "Detail view of the Passenger Message Manager (pmm)"
+      },
+      {
+        "id": 3,
+        "title": "Keycloak",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.4.1",
+        "cells": [],
+        "description": "Detail view of the Keycloak system"
       }
     ],
-    "diagramTop": 2,
+    "diagramTop": 4,
     "reviewer": "",
     "threatTop": 3
   }
