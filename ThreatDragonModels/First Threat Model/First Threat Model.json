@@ -6063,9 +6063,9 @@
       {
         "id": 3,
         "title": "Keycloak",
-        "diagramType": "STRIDE",
-        "placeholder": "New STRIDE diagram description",
-        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "diagramType": "Generic",
+        "placeholder": "New generic diagram description",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
         "version": "2.4.1",
         "cells": [],
         "description": "Detail view of the Keycloak system"
